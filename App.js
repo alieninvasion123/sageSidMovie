@@ -5,8 +5,6 @@ import View from "react-native-web";
 
 export default function App(){
 
-    const [user, setUser] = useState({token: ""});
-
     return(
         <SageNavigation />
         );
