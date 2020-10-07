@@ -13,7 +13,7 @@ export default class SignUp extends React.Component {
                             <Image
                                 style={styles.logo}
                                 source={require('../assets/logo.png')}/>
-                            <Text style={styles.title}>Please Fill in the Info !!! Meeooww!!</Text>
+                            <Text style={styles.title}>Please Fill in the Info!</Text>
                         </View>
 
                         <View style={styles.inputContainer}>
