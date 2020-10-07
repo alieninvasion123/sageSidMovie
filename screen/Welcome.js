@@ -6,6 +6,7 @@ import {StyleSheet, Text, View, TouchableOpacity,Image,ImageBackground, Button} 
 
 
 export default class Welcome extends Component
+
 {
     render(){
 
