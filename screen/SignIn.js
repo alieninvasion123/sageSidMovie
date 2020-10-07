@@ -1,41 +1,40 @@
 import React from 'react';
 
-import {StyleSheet, Text, View, TextInput, TouchableOpacity,Image,ImageBackground,AsyncStorage} from 'react-native';
-import { ceil } from 'react-native-reanimated';
+import {StyleSheet, Text, View, TextInput, TouchableOpacity,Image,ImageBackground} from 'react-native';
 
 
 export default class SignIn extends React.Component {
     render(){
         return(
-            
+
            <View style={styles.container}>
-              <ImageBackground source={require('../assets/background.jpg')} style={styles.backgroundImage}>
+              <ImageBackground source={require('../assets/background.png')} style={styles.backgroundImage}>
                 <View style={styles.content}>
                  <View style={styles.logoContainer}>
-                     <Image 
+                     <Image
                      style={styles.logo}
-                     source={require('../assets/Octocat.png')}/>
-                     <Text style={styles.title}>Welcome Back Meeoww!!</Text>
+                     source={require('../assets/logo.png')}/>
+                     <Text style={styles.title}>Welcome to my world of movies!</Text>
                  </View>
 
                  <View style={styles.inputContainer}>
                      <TextInput underlineColorAndroid='transparent' style={styles.input}
-                     placeholder='Username'></TextInput>
+    placeholder='Username'/>
                          <TextInput secureTextEntry={true} underlineColorAndroid='transparent' style={styles.input}
-                     placeholder='Password'>
+                     placeholder='Password'/>
 
-                     </TextInput>
-                    
+
+
                   </View>
                   <TouchableOpacity onPress={this.login} style={styles.buttonContainer}>
                          <Text style={styles.buttonText}>LOGIN</Text>
                      </TouchableOpacity>
                 </View>
              </ImageBackground>
-        </View>                 
+        </View>
 
-           
-            
+
+
         );
     }
 
@@ -44,8 +43,8 @@ export default class SignIn extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        
-        
+
+
     },
     backgroundImage: {
         flex: 1,
@@ -57,17 +56,17 @@ const styles = StyleSheet.create({
     content:{
       alignItems: 'center'
     },
-       
+
     logoContainer:{
       alignItems: 'center',
       flexGrow: 1,
       justifyContent: 'center',
     },
     logo: {
-        width: 100,
-        height: 100
-       
-        
+        width: 170,
+        height: 120
+
+
     },
     title: {
       color: '#fff',
@@ -81,9 +80,8 @@ const styles = StyleSheet.create({
         padding: 20,
         paddingBottom: 10,
         alignSelf: 'stretch',
-        borderWidth: 1,
         borderColor: '#fff',
-        backgroundColor: 'rgba(225,225,225,0.2)'
+
     },
     input: {
         fontSize: 16,
@@ -91,25 +89,23 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 10,
         backgroundColor: 'rgba(255,255,255,0.7)'
-        
-        
+
+
     },
     buttonContainer: {
-        alignSelf: 'stretch',
+        width: 150,
         margin: 20,
-        padding: 20,
-        backgroundColor: 'blue',
-        borderWidth: 1,
+        padding: 10,
         borderColor: '#fff',
         backgroundColor: 'rgba(255,255,255,0.6)',
 
     },
     buttonText: {
         fontSize: 16,
-        
+
         textAlign: 'center',
     }
-    
+
 
 
 });
